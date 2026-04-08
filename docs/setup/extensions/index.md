@@ -83,11 +83,8 @@ most of the features listed in the [Authoring] part of this documentation.
 
 [Authoring]: ../../authoring/markdown.md
 
-If you define other extensions or need to change options on any of the default
-extensions, you will need to configure _all_ of the extensions you are using.
-The following is the full expansion of the default configuration that you
-can use as a starting point if you want to explicitly control what Markdown
-extensions are active in your project:
+If you bootstrap your project with [`zensical new`][new command], the following
+extensions are enabled by default:
 
 === "`zensical.toml`"
 
@@ -169,6 +166,7 @@ extensions are active in your project:
     included in the defaults, as well as remove them.
 
   [preset mechanism]: https://zensical.org/about/roadmap/#configuration
+  [new command]: ../../usage/new.md
 
 ### Disable the defaults
 
