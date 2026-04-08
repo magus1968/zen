@@ -89,15 +89,15 @@ explicitly defined page title, followed by a title derived from the first level
 one Markdown header. If none of these are available, the filename is used as a
 fallback.
 
-!!! info "Future developments"
-    Note that the order of priority defined above ensures compatibility with
-    MkDocs. We are reviewing the handling of page titles in the context of our
-    [work on navigation within Zensical Spark].
+!!! warning "Temporary limitation"
 
-    In particular, we are looking to preserve markup in the title, which MkDocs
-    strips out, making workarounds necessary in the typeset plugin of Material
-    for MkDocs to re-create a title that preserves markup.
+    The order above applies to page titles in navigation.
 
-    Any re-design will include migration paths that avoid costly re-work.
+    There's one case where Zensical currently does not behave exactly like MkDocs: if you specify a `nav` setting in configuration, but don't specify `# Page title` in your Markdown files, MkDocs will use the navigation title, whereas Zensical will use the base name of the Markdown file as the `h1` of the page.
 
-[work on navigation within Zensical Spark]: https://zensical.org/about/roadmap/#modular-navigation
+    ---
+
+    We're currently redesigning navigation, and will address this issue as part of that work. [ZAP 001] outlines behavior of page titles and their use cases. In particular, we are looking to preserve markup in the title, which MkDocs
+    strips out. Any re-design will include migration paths that avoid costly re-work.
+
+  [ZAP 001]: https://zensical.org/spark/proposals/zap-001-page-titles/
