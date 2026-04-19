@@ -22,7 +22,7 @@ This creates the following structure:
 ``` .sh
 .
 ├─ .github/workflows
-│  ├─ docs.yml
+│  └─ docs.yml
 ├─ docs/
 │  ├─ index.md
 │  └─ markdown.md

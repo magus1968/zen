@@ -22,7 +22,7 @@ The directory structure created within the project directory consists of:
 ```sh
 .
 ├─ .github/workflows
-│  ├─ docs.yml
+│  └─ docs.yml
 ├─ docs/
 │  ├─ index.md
 │  └─ markdown.md
@@ -34,12 +34,12 @@ customized following the instructions in the [setup guides].
 
 - The `docs` directory contains your documentation's sources. The provided
   `index.md` and `markdown.md` files are included as starting points. The
-  directory can be changed via [`docs_dir`][docs_dir]
+  directory can be changed via [`docs_dir`][docs_dir].
 
 - The `.github` folder contains a GitHub Actions workflow that helps to
   automatically build and [publish your documentation] site to [GitHub Pages].
   You can modify the workflow to suit your own CI/CD needs, or remove the folder
-  entirly if you use a different platform.
+  entirely if you use a different platform.
 
 [setup guides]: ../setup/basics.md
 [docs_dir]: ../setup/basics.md#docs_dir
