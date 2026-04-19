@@ -21,7 +21,8 @@ The directory structure created within the project directory consists of:
 
 ```sh
 .
-├─ .github/
+├─ .github/workflows
+│  ├─ docs.yml
 ├─ docs/
 │  ├─ index.md
 │  └─ markdown.md
